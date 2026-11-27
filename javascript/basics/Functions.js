@@ -1,5 +1,5 @@
 function greeting(name) {
-    if(undefined){
+    if(name===undefined){
         console.log("please provide a name");
         return;
     }
@@ -15,7 +15,7 @@ function simulate(num1,...args) {
     return args
 };
 
-console.log(simulate(1, 2, 3, 4, 5));
+console.log(simulate(1, 2, 3, 4, 5));//resrt operator is used to collect the remaining arguments into an array
 
 function handleobject(anyobj){
     console.log(`hey my name is ${anyobj.name} and my age is ${anyobj.age}`);
@@ -39,3 +39,15 @@ function greeting2(name="Guest"){
 }
 
 greeting2(); // Calls the function with the default parameter
+
+
+console.log(one(5));//6
+function one(num){
+    return num+1;
+}
+
+
+console.log(two(4));
+const two=function(num){
+    return num+2;
+}
