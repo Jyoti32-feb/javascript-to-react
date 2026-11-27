@@ -100,3 +100,11 @@ console.log(addition(12,2));
 
 const returnobj=()=>({name:"jyoti",age:26});
 console.log(returnobj());
+
+(function wel(){
+    console.log("welcome to india");
+})();
+
+((naam)=>{
+    console.log(`hello ..how are you ${naam}`);
+})("jyoti");
