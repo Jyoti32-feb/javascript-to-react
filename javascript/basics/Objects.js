@@ -78,3 +78,16 @@ console.log(Object.entries(mergedUser));
 console.log(Object.hasOwn(mergedUser, 1));
 
 console.log(user.hasOwnProperty("nam"));
+
+const course={
+    title:"JavaScript",
+    duration:"3 months",
+    level:"beginner"
+}
+
+course.level="intermediate";
+
+console.log(course.level);
+
+const {level:Stage}=course;
+console.log(Stage);
